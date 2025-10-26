@@ -1,0 +1,135 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* pas de scroll */
+}
+
+body {
+  font-family: "Courier New", monospace;
+  background: #fff;
+  color: #111;
+}
+
+/* Layout principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .logo h1 {
+  font-family: serif;
+  font-size: 1.8rem;
+  border: 2px dashed #000;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .logo h2 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.sidebar .logo p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.nav ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.nav li {
+  margin-bottom: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #0077ff;
+}
+
+.illustration img {
+  max-width: 100%;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* espacement de 20px */
+  padding: 20px; /* pour respirer autour */
+  width: 100%; /* prend 100% de la largeur */
+  height: 100vh; /* prend toute la hauteur */
+  overflow: hidden; /* pas de scroll interne */
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 200px 1fr 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar .illustration {
+    display: none; /* cacher l’illustration sur mobile */
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}
