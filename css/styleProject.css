@@ -1,0 +1,106 @@
+/************************************ Page Projet ************************************/
+body {
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px dashed #000;
+  padding: 0.5rem 1rem;
+  margin: 20px;
+}
+
+.nav-box a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-box a.active {
+  text-decoration: underline;
+}
+
+/* Contenu */
+.project-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.project-description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Galerie */
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Première image pleine largeur */
+.project-gallery img.full {
+  grid-column: span 2;
+}
+
+/* Footer */
+.project-footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  border-top: 2px dashed #000;
+  text-align: center;
+}
+
+.project-footer h2 {
+  font-family: serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.project-footer p {
+  margin: 0.5rem 0;
+}
+
+.project-footer a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.footer-logo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-text {
+  text-align: right;
+}
+
+.logo {
+  width: 20vw;
+}
