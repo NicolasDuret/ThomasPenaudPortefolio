@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work - Thomas Penaud</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -19,87 +25,128 @@
       </nav>
     </header>
 
-    <!-- Carrousel -->
+    <!-- Carrousel Splide -->
     <main class="work-page">
-      <div class="carousel">
-        <div class="carousel-track">
-          <!-- 18 projets -->
-          <div class="project">
-            <img src="assets/images/photo1.jpg" alt="Projet 1" />
-            <div class="overlay"><span>Projet 1</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo2.jpg" alt="Projet 2" />
-            <div class="overlay"><span>Projet 2</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo3.jpg" alt="Projet 3" />
-            <div class="overlay"><span>Projet 3</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo4.jpg" alt="Projet 4" />
-            <div class="overlay"><span>Projet 4</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo5.jpg" alt="Projet 5" />
-            <div class="overlay"><span>Projet 5</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo6.jpg" alt="Projet 6" />
-            <div class="overlay"><span>Projet 6</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo7.jpg" alt="Projet 7" />
-            <div class="overlay"><span>Projet 7</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo8.jpg" alt="Projet 8" />
-            <div class="overlay"><span>Projet 8</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo9.jpg" alt="Projet 9" />
-            <div class="overlay"><span>Projet 9</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo10.jpg" alt="Projet 10" />
-            <div class="overlay"><span>Projet 10</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo11.jpg" alt="Projet 11" />
-            <div class="overlay"><span>Projet 11</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo12.jpg" alt="Projet 12" />
-            <div class="overlay"><span>Projet 12</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo13.jpg" alt="Projet 13" />
-            <div class="overlay"><span>Projet 13</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo14.jpg" alt="Projet 14" />
-            <div class="overlay"><span>Projet 14</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo15.jpg" alt="Projet 15" />
-            <div class="overlay"><span>Projet 15</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo16.jpg" alt="Projet 16" />
-            <div class="overlay"><span>Projet 16</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo17.jpg" alt="Projet 17" />
-            <div class="overlay"><span>Projet 17</span></div>
-          </div>
-          <div class="project">
-            <img src="assets/images/photo18.jpg" alt="Projet 18" />
-            <div class="overlay"><span>Projet 18</span></div>
-          </div>
+      <section id="image-carousel" class="splide" aria-label="Galerie projets">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- 18 projets -->
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo1.jpg" alt="Projet 1" />
+                <div class="overlay"><span>Projet 1</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo2.jpg" alt="Projet 2" />
+                <div class="overlay"><span>Projet 2</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo3.jpg" alt="Projet 3" />
+                <div class="overlay"><span>Projet 3</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo4.jpg" alt="Projet 4" />
+                <div class="overlay"><span>Projet 4</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo5.jpg" alt="Projet 5" />
+                <div class="overlay"><span>Projet 5</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo6.jpg" alt="Projet 6" />
+                <div class="overlay"><span>Projet 6</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo7.jpg" alt="Projet 7" />
+                <div class="overlay"><span>Projet 7</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo8.jpg" alt="Projet 8" />
+                <div class="overlay"><span>Projet 8</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo9.jpg" alt="Projet 9" />
+                <div class="overlay"><span>Projet 9</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo10.jpg" alt="Projet 1O" />
+                <div class="overlay"><span>Projet 10</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo11.jpg" alt="Projet 11" />
+                <div class="overlay"><span>Projet 11</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo12.jpg" alt="Projet 12" />
+                <div class="overlay"><span>Projet 12</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo13.jpg" alt="Projet 13" />
+                <div class="overlay"><span>Projet 13</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo14.jpg" alt="Projet 14" />
+                <div class="overlay"><span>Projet 14</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo15.jpg" alt="Projet 15" />
+                <div class="overlay"><span>Projet 15</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo16.jpg" alt="Projet 16" />
+                <div class="overlay"><span>Projet 16</span></div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo17.jpg" alt="Projet 17" />
+                <div class="overlay"><span>Projet 17</span></div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="project">
+                <img src="assets/images/photo18.jpg" alt="Projet 18" />
+                <div class="overlay"><span>Projet 18</span></div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
     </main>
 
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="js/work.js"></script>
   </body>
 </html>

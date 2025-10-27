@@ -221,39 +221,40 @@ body {
   height: calc(100vh - 60px);
   overflow: hidden;
   position: relative;
+  background: #fff;
 }
 
-/* Carrousel */
-.carousel {
-  /* width: 100%; */
-  height: 60vh;
-  overflow: hidden;
-  position: fixed; /* fixé en bas */
+/* Splide container fixé en bas */
+.splide {
+  position: fixed !important;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
 }
 
-.carousel-track {
-  display: flex;
-  height: 100%;
-  animation: scroll 60s linear infinite; /* défilement auto */
-}
-
+/* Chaque slide = largeur forcée */
 .project {
   position: relative;
-  margin: 0 10px;
-  overflow: hidden;
-  display: flex; /* ajout */
+  display: flex;
   align-items: flex-end;
-  width: 40vw;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .project img {
-  display: block;
+  width: 100%; /* l’image prend 100% de la div .project */
+  height: auto;
   max-height: 60vh;
   object-fit: cover;
-  transition: all 0.3s ease;
-  bottom: 0;
-  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .project {
+    width: 100vw; /* en mobile : 1 image = 100% */
+  }
 }
 
 /* Overlay */
@@ -261,8 +262,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
@@ -277,20 +279,10 @@ body {
   font-family: "Courier New", monospace;
 }
 
+/* Hover */
 .project:hover img {
   filter: brightness(0.7);
 }
-
 .project:hover .overlay {
   opacity: 1;
-}
-
-/* Animation carrousel */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  } /* dépendra du nombre d’éléments */
 }
