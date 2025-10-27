@@ -22,6 +22,13 @@ body {
   color: #000;
 }
 
+.logo-box a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
 .nav-box a.active {
   text-decoration: underline;
 }
