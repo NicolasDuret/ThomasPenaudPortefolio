@@ -80,7 +80,7 @@ body {
 
 .logo {
   border: 20px solid; /* taille de la bordure */
-  border-image: url("../assets/images/border.svg") 20 round;
+  border-image: url("../assets/images/borderMain.svg") 20 round;
 }
 
 .sidebar .logo h1 {
