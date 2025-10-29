@@ -126,6 +126,30 @@ body {
   bottom: 3vh;
   width: 320px;
   margin-left: 3px;
+
+  /* Animation */
+  animation: wiggle 5s infinite;
+}
+
+/* Définition de l’agitation */
+@keyframes wiggle {
+  0%,
+  90%,
+  100% {
+    transform: rotate(0deg);
+  }
+  92% {
+    transform: rotate(-3deg);
+  }
+  94% {
+    transform: rotate(3deg);
+  }
+  96% {
+    transform: rotate(-1deg);
+  }
+  98% {
+    transform: rotate(1deg);
+  }
 }
 
 /* Gallery */
