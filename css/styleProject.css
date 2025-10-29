@@ -111,6 +111,13 @@ body {
   margin: 0.5rem 0;
 }
 
+.footer-brand img.logo-boro {
+  max-width: 200px; /* ajuste selon ton design */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centre horizontalement */
+}
+
 .project-footer a {
   display: inline-block;
   margin-top: 1rem;
