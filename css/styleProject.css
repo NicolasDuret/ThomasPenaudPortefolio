@@ -29,7 +29,8 @@ body {
 
 .logo-box span a {
   font-size: 1.4rem;
-  font-weight: bold;
+  font-family: "scatterplot-vf", sans-serif;
+  font-weight: 500;
 }
 
 .nav-box a {
@@ -60,8 +61,9 @@ body {
 
 .project-title {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1.5rem;
+  font-family: "scatterplot-vf", sans-serif;
 }
 
 .project-description {
