@@ -85,14 +85,16 @@ body {
 
 .sidebar .logo h1 {
   font-family: serif;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   display: inline-block;
-  padding: 0.2rem 0.5rem;
   margin-bottom: 0.5rem;
+  font-family: "scatterplot-vf", sans-serif;
+  font-weight: 700;
 }
 
 .sidebar .logo h2 {
   font-size: 1rem;
+  font-family: "scatterplot-vf", sans-serif;
   margin-bottom: 0.3rem;
 }
 
