@@ -72,7 +72,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem;
@@ -103,7 +103,7 @@ body {
 
 .nav ul {
   list-style: none;
-  margin-top: 2rem;
+  margin-top: 25vh;
 }
 
 .nav li {
@@ -124,7 +124,7 @@ body {
 .illustration img {
   position: absolute;
   bottom: 3vh;
-  max-width: 20vw;
+  width: 320px;
   margin-left: 3px;
 }
 
