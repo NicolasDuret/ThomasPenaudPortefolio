@@ -120,7 +120,7 @@ body {
 }
 
 .nav a:hover {
-  color: #0077ff;
+  color: #777;
 }
 
 .illustration img {
@@ -178,35 +178,111 @@ body {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 200px 1fr 1fr;
+  body {
+    overflow: auto;
   }
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+  .Mobile {
+    height: 100%;
+  }
+
+  .MainPage {
+    overflow: hidden;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .logoMobile {
+    border: 25px solid; /* taille de la bordure */
+    border-image: url("../assets/images/borderMain.svg") 20 round;
+    margin: 20px;
+  }
+
+  /* Sidebar */
+  .sidebarMobile {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    height: 34%;
+    margin: 0;
+    align-items: center;
+  }
+  .logoMobile {
+    max-width: 600px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .navMobile {
+    max-width: 600px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .sidebarMobile .logoMobile h1 {
+    font-family: serif;
+    font-size: 2.6rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-family: "scatterplot-vf", sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .sidebarMobile .logoMobile h2 {
+    font-size: 1rem;
+    font-family: "scatterplot-vf", sans-serif;
+    margin-bottom: 0.3rem;
+    text-align: center;
+  }
+
+  .sidebarMobile .logoMobile p {
+    font-size: 0.85rem;
+    color: #777;
+    text-align: center;
+  }
+
+  .navMobile ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .navMobile a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  /* Gallery */
+  .galleryMobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* espacement de 20px */
+    width: 100%; /* prend 100% de la largeur */
+    height: 66%;
+    overflow: hidden;
+  }
+
+  .gallery-itemMobile {
+    overflow: hidden;
+  }
+
+  .gallery-itemMobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
-
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-
-  .sidebar {
-    flex-direction: row;
-    align-items: center;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .sidebar .illustration {
-    display: none; /* cacher l’illustration sur mobile */
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px;
+@media (min-width: 1025px) {
+  .Mobile {
+    display: none;
   }
 }
 

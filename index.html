@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Thomas Penaud</title>
     <link rel="icon" type="image/png" href="assets/images/logoBar.svg" />
-    <link rel="stylesheet" href="https://use.typekit.net/vhf6nfr.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/vhf6nfr.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="grid-container">
+  <body class="MainPage">
+    <div class="grid-container web">
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="logo">
@@ -47,8 +47,46 @@
       </main>
     </div>
 
-    <div class="illustration">
+    <div class="illustration web">
       <img src="assets/images/logoMain.svg" alt="Illustration graphique" />
+    </div>
+
+    <div class="grid-containerMobile Mobile">
+      <!-- Sidebar -->
+      <aside class="sidebarMobile">
+          <div class="logoMobile">
+            <h1>Portfolio</h1>
+            <h2>Thomas PENAUD</h2>
+            <p>designer graphique<br />photographe</p>
+          </div>
+
+          <nav class="navMobile">
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="info.html">Info</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      <!-- Main content with 3 columns -->
+      <main class="galleryMobile">
+        <div class="gallery-itemMobile">
+          <a href="photoDanse.html"
+            ><img src="assets/images/land1.jpg" alt="Projet 1"
+          /></a>
+        </div>
+        <div class="gallery-itemMobile">
+          <a href="ChardonSavard.html"
+            ><img src="assets/images/land2.jpg" alt="Projet 2"
+          /></a>
+        </div>
+        <div class="gallery-itemMobile">
+          <a href="atelierMeraki.html"
+            ><img src="assets/images/land3.jpg" alt="Projet 3"
+          /></a>
+        </div>
+      </main>
     </div>
   </body>
 </html>
