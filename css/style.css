@@ -213,6 +213,7 @@ body {
     max-width: 600px;
     margin: 0;
     align-items: center;
+    text-align: center;
   }
 
   .navMobile {
