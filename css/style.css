@@ -194,7 +194,7 @@ body {
   }
 
   .logoMobile {
-    border: 25px solid; /* taille de la bordure */
+    border: 20px solid; /* taille de la bordure */
     border-image: url("../assets/images/borderMain.svg") 20 round;
     margin: 20px;
   }
@@ -210,21 +210,21 @@ body {
     align-items: center;
   }
   .logoMobile {
-    max-width: 450px;
+    max-width: 500px;
     text-align: center;
     width: 70vw;
   }
 
   .navMobile {
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     margin: 0;
     align-items: center;
   }
 
   .sidebarMobile .logoMobile h1 {
     font-family: serif;
-    font-size: 2.6rem;
+    font-size: 8vw;
     display: inline-block;
     margin-bottom: 0.5rem;
     font-family: "scatterplot-vf", sans-serif;
@@ -233,14 +233,13 @@ body {
   }
 
   .sidebarMobile .logoMobile h2 {
-    font-size: 1rem;
+    font-size: 3.5vw;
     font-family: "scatterplot-vf", sans-serif;
-    margin-bottom: 0.3rem;
     text-align: center;
   }
 
   .sidebarMobile .logoMobile p {
-    font-size: 0.85rem;
+    font-size: 3.5vw;
     color: #777;
     text-align: center;
   }
@@ -256,7 +255,7 @@ body {
   .navMobile a {
     text-decoration: none;
     color: #111;
-    font-size: 1rem;
+    font-size: 2.8vw;
     transition: color 0.3s;
   }
 
@@ -279,6 +278,22 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+  @media (max-height: 700px) {
+    .sidebarMobile {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .sidebarMobile .logoMobile h1 {
+      font-size: 1.5rem;
+    }
+
+    .sidebarMobile .logoMobile h2 {
+      font-size: 1rem;
+      font-family: "scatterplot-vf", sans-serif;
+      margin-bottom: 0.3rem;
+      text-align: center;
+    }
   }
   @media (max-height: 700px) {
     .sidebarMobile {
