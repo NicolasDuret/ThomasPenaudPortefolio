@@ -103,6 +103,10 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-family: "scatterplot-vf", sans-serif;
+}
+
 .project-footer h2 {
   font-family: serif;
   font-size: 2rem;
@@ -140,4 +144,21 @@ body {
 
 .logo {
   width: 18vw;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    border: 20px solid; /* taille de la bordure */
+    border-image: url("../assets/images/borderMain.svg") 20 round;
+    font-size: 4vw;
+  }
+  .logo-box span a {
+    font-size: 4vw;
+  }
+  .logo-box span H1 {
+    font-size: 7vw;
+    font-family: "scatterplot-vf", sans-serif;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
 }
