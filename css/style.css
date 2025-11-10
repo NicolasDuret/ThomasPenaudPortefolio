@@ -201,23 +201,23 @@ body {
 
   /* Sidebar */
   .sidebarMobile {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem;
-    height: 34%;
+    height: 40%;
     margin: 0;
     align-items: center;
   }
   .logoMobile {
-    max-width: 600px;
-    margin: 0;
-    align-items: center;
+    max-width: 450px;
     text-align: center;
+    width: 70vw;
   }
 
   .navMobile {
-    max-width: 600px;
+    width: 100%;
+    max-width: 450px;
     margin: 0;
     align-items: center;
   }
@@ -266,7 +266,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px; /* espacement de 20px */
     width: 100%; /* prend 100% de la largeur */
-    height: 66%;
+    height: 60%;
     overflow: hidden;
   }
 
@@ -279,6 +279,22 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+  @media (max-height: 700px) {
+    .sidebarMobile {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .sidebarMobile .logoMobile h1 {
+      font-size: 1.5rem;
+    }
+
+    .sidebarMobile .logoMobile h2 {
+      font-size: 1rem;
+      font-family: "scatterplot-vf", sans-serif;
+      margin-bottom: 0.3rem;
+      text-align: center;
+    }
   }
 }
 @media (min-width: 1025px) {
