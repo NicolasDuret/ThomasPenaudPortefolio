@@ -3,159 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work - Thomas Penaud</title>
+    <title>Works - Thomas PENAUD</title>
     <link rel="icon" type="image/png" href="assets/images/logoBar.svg" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Splide CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
-    />
   </head>
-  <body>
+  <body class="BodyWork">
     <!-- Header -->
     <header class="header">
       <div class="logo-box">
-        <span>
-          <a href="index.html"
-            ><h1>Portfolio</h1>
-            Thomas PENAUD</a
-          ></span
-        >
+        <span><a href="index.html">portfolio Tomas PENAUD</a></span>
       </div>
       <nav class="nav-box">
-        <a href="work.html">Work</a>
+        <a href="work.html" class="active">Work</a>
         <a href="info.html">Info</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <!-- Carrousel Splide -->
-    <main class="work-page">
-      <section id="image-carousel" class="splide" aria-label="Galerie projets">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <!-- 18 projets -->
-            <li class="splide__slide">
-              <a href="photoDanse.html">
-                <div class="project">
-                  <img src="assets/images/photo1.jpg" alt="Projet 1" />
-                  <div class="overlay"><span>Projet 1</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="atelierMeraki.html">
-                <div class="project">
-                  <img src="assets/images/photo2.jpg" alt="Projet 2" />
-                  <div class="overlay"><span>Projet 2</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="concert.html">
-                <div class="project">
-                  <img src="assets/images/photo3.jpg" alt="Projet 3" />
-                  <div class="overlay"><span>Projet 3</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="argentique.html">
-                <div class="project">
-                  <img src="assets/images/photo4.jpg" alt="Projet 4" />
-                  <div class="overlay"><span>Projet 4</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="ChardonSavard.html">
-                <div class="project">
-                  <img src="assets/images/photo5.jpg" alt="Projet 5" />
-                  <div class="overlay"><span>Projet 5</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="Serigraphie.html">
-                <div class="project">
-                  <img src="assets/images/photo6.jpg" alt="Projet 6" />
-                  <div class="overlay"><span>Projet 6</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="ptitmoustachu.html">
-                <div class="project">
-                  <img src="assets/images/photo7.jpg" alt="Projet 7" />
-                  <div class="overlay"><span>Projet 7</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="lottaStudio.html">
-                <div class="project">
-                  <img src="assets/images/photo8.jpg" alt="Projet 8" />
-                  <div class="overlay"><span>Projet 8</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="shooting.html">
-                <div class="project">
-                  <img src="assets/images/photo9.jpg" alt="Projet 9" />
-                  <div class="overlay"><span>Projet 9</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="biomalt.html">
-                <div class="project">
-                  <img src="assets/images/photo10.jpg" alt="Projet 1O" />
-                  <div class="overlay"><span>Projet 10</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="exposition.html">
-                <div class="project">
-                  <img src="assets/images/photo11.jpg" alt="Projet 11" />
-                  <div class="overlay"><span>Projet 11</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="affichePerso.html">
-                <div class="project">
-                  <img src="assets/images/photo12.jpg" alt="Projet 12" />
-                  <div class="overlay"><span>Projet 12</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="shooting2.html">
-                <div class="project">
-                  <img src="assets/images/photo13.jpg" alt="Projet 13" />
-                  <div class="overlay"><span>Projet 13</span></div>
-                </div>
-              </a>
-            </li>
-            <li class="splide__slide">
-              <a href="affichePerso2.html">
-                <div class="project">
-                  <img src="assets/images/photo14.jpg" alt="Projet 14" />
-                  <div class="overlay"><span>Projet 14</span></div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- Works list -->
+    <main class="works-page">
+      <section class="works-grid">
+        <!-- 1 -->
+        <a href="photoDanse.html" class="work-item">
+          <h2>projet danse</h2>
+          <img src="assets/images/photo1.jpg" alt="Projet danse" />
+        </a>
+
+        <!-- 2 -->
+        <a href="atelierMeraki.html" class="work-item">
+          <h2>projet atelier meraki</h2>
+          <img src="assets/images/photo2.jpg" alt="Projet atelier Meraki" />
+        </a>
+
+        <!-- 3 -->
+        <a href="photoConcert.html" class="work-item">
+          <h2>photo concert</h2>
+          <img src="assets/images/photo3.jpg" alt="Photo concert" />
+        </a>
+
+        <!-- 4 -->
+        <a href="serigraphie.html" class="work-item">
+          <h2>sérigraphie</h2>
+          <img src="assets/images/photo4.jpg" alt="Sérigraphie" />
+        </a>
+
+        <!-- 5 -->
+        <a href="chardonSavard.html" class="work-item">
+          <h2>chardon savard</h2>
+          <img src="assets/images/photo5.jpg" alt="Chardon Savard" />
+        </a>
+
+        <!-- 6 -->
+        <a href="argentique.html" class="work-item">
+          <h2>argentique</h2>
+          <img src="assets/images/photo6.jpg" alt="Argentique" />
+        </a>
+
+        <!-- 7 -->
+        <a href="ptitMoustachu.html" class="work-item">
+          <h2>le p’tit moustachu</h2>
+          <img src="assets/images/photo7.jpg" alt="Le p'tit moustachu" />
+        </a>
+
+        <!-- 8 -->
+        <a href="shootingCuisine.html" class="work-item">
+          <h2>shooting cuisine</h2>
+          <img src="assets/images/photo8.jpg" alt="Shooting cuisine" />
+        </a>
+
+        <!-- 9 -->
+        <a href="shootingCinema.html" class="work-item">
+          <h2>shooting cinema</h2>
+          <img src="assets/images/photo9.jpg" alt="Shooting cinéma" />
+        </a>
+
+        <!-- 10 -->
+        <a href="lottaStudio.html" class="work-item">
+          <h2>lotta studio</h2>
+          <img src="assets/images/photo10.jpg" alt="Lotta studio" />
+        </a>
+
+        <!-- 11 -->
+        <a href="fibois.html" class="work-item">
+          <h2>projet branding/typo</h2>
+          <img src="assets/images/photo11.jpg" alt="Projet branding/typo" />
+        </a>
+
+        <!-- 12 -->
+        <a href="poster.html" class="work-item">
+          <h2>poster</h2>
+          <img src="assets/images/photo12.jpg" alt="Poster" />
+        </a>
+
+        <!-- 13 -->
+        <a href="exposition.html" class="work-item">
+          <h2>exposition</h2>
+          <img src="assets/images/photo13.jpg" alt="Exposition" />
+        </a>
+
+        <!-- 14 -->
+        <a href="shootingDouche.html" class="work-item">
+          <h2>shooting douche</h2>
+          <img src="assets/images/photo14.jpg" alt="Shooting douche" />
+        </a>
+
+        <!-- 15 -->
+        <a href="bonali.html" class="work-item">
+          <h2>bonali</h2>
+          <img src="assets/images/photo14.jpg" alt="Bonali" />
+        </a>
+
+        <!-- ajoute les 3 derniers de la même manière -->
       </section>
     </main>
-
-    <!-- Splide JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script src="js/work.js"></script>
   </body>
 </html>

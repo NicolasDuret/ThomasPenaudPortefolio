@@ -471,3 +471,72 @@ body {
 .project:hover .overlay {
   opacity: 1;
 }
+
+/************************************ Work Page (liste des projets) ************************************/
+.BodyWork {
+  overflow-y: scroll;
+}
+.works-page {
+  max-width: 1200px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+  font-family: "Courier New", monospace;
+  overflow: auto;
+}
+
+/* grille pseudo-libre */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 4rem;
+  row-gap: 3rem;
+}
+
+/* carte projet */
+.work-item {
+  text-decoration: none;
+  color: #000;
+}
+
+.work-item h2 {
+  font-size: 0.95rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Effet léger au survol */
+.work-item:hover img {
+  filter: brightness(0.85);
+}
+
+/* Responsive tablette */
+@media (max-width: 1024px) {
+  .works-page {
+    margin-top: 1.5rem;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .work-item h2 {
+    font-size: 1rem;
+  }
+}
