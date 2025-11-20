@@ -450,7 +450,12 @@ h1 {
 .work-item:hover img {
   filter: brightness(0.85);
 }
-
+@media (min-width: 1024px) {
+  .works-grid .paysage {
+    grid-column: span 2;
+    max-width: 45vw;
+  }
+}
 /* Responsive tablette */
 @media (max-width: 1024px) {
   .works-page {
