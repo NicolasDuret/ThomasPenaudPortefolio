@@ -16,6 +16,10 @@ body {
   background: #fff;
   color: #111;
 }
+
+h1 {
+  font-family: "scatterplot-vf", sans-serif !important;
+}
 /************************************* Header ****************************************/
 .header {
   display: flex;
@@ -397,81 +401,6 @@ body {
   }
 }
 
-/************************************ Work Page ************************************/
-.work-page {
-  width: 100%;
-  height: calc(100vh - 60px);
-  overflow: hidden;
-  position: relative;
-  background: #fff;
-}
-
-/* Splide container fixé en bas */
-.splide {
-  position: fixed !important;
-  bottom: 20px;
-  left: 20px;
-  width: 100%;
-  height: 60vh;
-  /* padding: 0px 20px 20px 0px; */
-}
-
-/* Chaque slide = largeur forcée */
-.project {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.project img {
-  /* width: 100%; l’image prend 100% de la div .project */
-  height: auto;
-  max-height: 60vh;
-  object-fit: cover;
-
-  align-items: flex-end;
-  transition: filter 0.3s ease;
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-  .project {
-    width: 100vw; /* en mobile : 1 image = 100% */
-  }
-}
-
-/* Overlay */
-.project .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project .overlay span {
-  color: #fff;
-  font-size: 1.2rem;
-  font-family: "Courier New", monospace;
-}
-
-/* Hover */
-.project:hover img {
-  filter: brightness(0.7);
-}
-.project:hover .overlay {
-  opacity: 1;
-}
-
 /************************************ Work Page (liste des projets) ************************************/
 .BodyWork {
   overflow-y: scroll;
@@ -482,6 +411,12 @@ body {
   padding: 0 1.5rem;
   font-family: "Courier New", monospace;
   overflow: auto;
+}
+
+.works-page h1 {
+  font-family: "scatterplot-vf", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* grille pseudo-libre */
