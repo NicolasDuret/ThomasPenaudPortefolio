@@ -92,6 +92,65 @@ body {
   grid-column: span 2;
 }
 
+.image-wrapper {
+  position: relative; /* permet au texte d’être positionné par rapport à l'image */
+  display: inline-block;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10px; /* tu ajustes selon ton besoin */
+  left: 10px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 650;
+  margin-bottom: 1.5rem;
+  font-family: "scatterplot-vf", sans-serif; /* le texte ne bloque pas le hover/click */
+}
+
+.centerStage {
+  max-width: 50vw;
+  margin: 0;
+  align-items: center;
+}
+
+/* Bloc Bomalt */
+.bomalt-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  grid-auto-rows: auto;
+  gap: 0; /* pas d’espace entre les images */
+  width: 100%;
+}
+
+/* 1ère image = pleine largeur */
+.bomalt-item--full {
+  grid-column: 1 / -1; /* occupe les 2 colonnes */
+}
+
+.bomalt-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* coupe proprement si besoin */
+}
+
+/* Responsive : une seule colonne en mobile */
+@media (max-width: 768px) {
+  .bomalt-block {
+    grid-template-columns: 1fr;
+  }
+
+  .bomalt-item--full {
+    grid-column: auto;
+  }
+}
 /* Footer */
 .project-footer {
   margin-top: 3rem;
@@ -165,74 +224,5 @@ h1 {
   .info-page {
     padding: 10px;
     margin: 0;
-  }
-}
-
-/************************************ Work Page (liste des projets) ************************************/
-.BodyWork {
-  overflow-y: scroll;
-}
-.works-page {
-  max-width: 1200px;
-  margin: 2rem auto 4rem;
-  padding: 0 1.5rem;
-  font-family: "Courier New", monospace;
-  overflow: auto;
-}
-
-/* grille pseudo-libre */
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 4rem;
-  row-gap: 3rem;
-}
-
-/* carte projet */
-.work-item {
-  text-decoration: none;
-  color: #000;
-}
-
-.work-item h2 {
-  font-size: 0.95rem;
-  font-weight: normal;
-  margin-bottom: 0.5rem;
-}
-
-.work-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-/* Effet léger au survol */
-.work-item:hover img {
-  filter: brightness(0.85);
-}
-
-/* Responsive tablette */
-@media (max-width: 1024px) {
-  .works-page {
-    margin-top: 1.5rem;
-  }
-
-  .works-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 2rem;
-    row-gap: 2.5rem;
-  }
-}
-
-/* Responsive mobile */
-@media (max-width: 600px) {
-  .works-grid {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
-
-  .work-item h2 {
-    font-size: 1rem;
   }
 }
