@@ -455,6 +455,21 @@ h1 {
     grid-column: span 2;
     max-width: 45vw;
   }
+
+  .works-grid .right {
+    justify-self: end;
+  }
+
+  .decalGauch {
+    margin-left: -25px;
+
+    margin-top: -50px;
+  }
+  .decalDroite {
+    margin-right: -25px;
+
+    margin-top: 80px;
+  }
 }
 /* Responsive tablette */
 @media (max-width: 1024px) {
